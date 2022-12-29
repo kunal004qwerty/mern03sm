@@ -23,8 +23,8 @@ import AuthRoute from "./Routes/AuthRoute.js";
 import UserRoute from "./Routes/UserRoute.js";
 import PostRoute from "./Routes/PostRoute.js";
 import UploadRoute from "./Routes/UploadRoute.js";
-import conversationRoute from "./Routes/ConversationRoute.js";
-import messageRoute from "./Routes/MessageRoute.js";
+// import conversationRoute from "./Routes/ConversationRoute.js";
+// import messageRoute from "./Routes/MessageRoute.js";
 
 // !===================
 const app = express();
@@ -57,8 +57,8 @@ app.use("/api/auth", AuthRoute);
 app.use("/api/users", UserRoute);
 app.use("/api/posts", PostRoute);
 app.use("/api/upload", UploadRoute);
-app.use("/api/conversations", conversationRoute);
-app.use("/api/messages", messageRoute);
+// app.use("/api/conversations", conversationRoute);
+// app.use("/api/messages", messageRoute);
 // !----------------------------
 // STATIC_FILES;
 app.use(express.static(path.join(__dirname, "./client/build")));
